@@ -123,6 +123,6 @@ projetINDEX/
 
 -----------------------------
 
-$Merci d’/avoir consulté ce README.$
+$Merci d’\avoir consulté ce README.$
 $N’hésitez pas à contribuer en proposant des améliorations ou en signalant des bugs !$
 
