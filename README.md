@@ -65,9 +65,9 @@ projetINDEX/
 
 **Après avoir installé les dépendances, lancez :**
 
-    ```bash
-    python main.py
-    ```
+  ```bash
+  python main.py
+  ```
 **Ensuite, ouvrez votre navigateur à l’adresse http://127.0.0.1:8050.**
 
 **Vous devriez voir l’interface Dash avec un champ de recherche et diverses sections d’affichage des résultats.**
@@ -123,6 +123,7 @@ projetINDEX/
 
 -----------------------------
 
-$Merci d’\avoir consulté ce README.$
-$N’hésitez pas à contribuer en proposant des améliorations ou en signalant des bugs !$
+**Merci d’avoir consulté ce README.**
+
+**N’hésitez pas à contribuer en proposant des améliorations ou en signalant des bugs !**
 
