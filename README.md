@@ -60,3 +60,69 @@ projetINDEX/
    ```bash
    pip install -r requirements.txt
    ```
+
+## Exécution
+
+**Après avoir installé les dépendances, lancez :**
+
+    ```bash
+    python main.py
+    ```
+**Ensuite, ouvrez votre navigateur à l’adresse http://127.0.0.1:8050.**
+
+**Vous devriez voir l’interface Dash avec un champ de recherche et diverses sections d’affichage des résultats.**
+
+
+
+## Fonctionnalités principales
+
+1. **Indexation**
+- Construction d’un index inversé :**
+    ```python
+    inverted_index = construire_index_inverse(df, ["ReviewHeader", "ReviewBody"])
+    ```
+- Chaque mot est lié à un sous-dictionnaire `{doc_id: [positions]}`.
+
+2. **Recherche**
+
+- Recherche d’un mot unique :
+    ```python
+    results = search_single_word(inverted_index, "service")
+    ```
+- Recherche d’une expression :
+    ```python
+    results = search_phrase(inverted_index, "service was friendly")
+    ```
+- Positions exactes renvoyées pour afficher un extrait contextuel.
+
+3. Interface Dash
+
+- Saisie d’un mot/phrase
+- Affichage de statistiques :
+   - Nombre de documents trouvés
+   - Nombre total d’occurrences
+   - Moyenne d’apparition (dans les docs où l’expression est présente)
+- Distribution des occurrences (bar chart Plotly)
+- **Extraits de texte :** zone contextuelle autour de chaque occurrence
+- **Word Cloud :** génère une image (mot-1, mot+1) pour chaque occurrence
+
+## Points d’amélioration
+- **Optimisation :** gestion avancée des stop words, stemming/lemmatisation, etc.
+- **Recherche booléenne (ET/OU) :** intersection ou union des résultats.
+- **Recherche fuzzy** (tolérance aux fautes d’orthographe).
+- **Scoring / Ranking :** classer les documents les plus pertinents en premier.
+- **Interface :** améliorer l’UX, ajouter un système de pagination pour les résultats.
+
+
+
+
+
+## Licence
+
+*Ce projet est un projet académique réalisé dans le cadre d’une formation. Il n’est pas distribué sous une licence particulière.*
+
+-----------------------------
+
+$Merci d’avoir consulté ce README.$
+$N’hésitez pas à contribuer en proposant des améliorations ou en signalant des bugs !$
+
